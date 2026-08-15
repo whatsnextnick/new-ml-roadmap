@@ -22,10 +22,18 @@ wheels/
 *.egg
 
 # Virtual Environment
+.venv/
 venv/
 ENV/
+env/
 env.bak/
 venv.bak/
+
+# IDE & Editor Configs
+.idea/
+.vscode/
+*.swp
+*.swo
 
 # Jupyter Notebook
 .ipynb_checkpoints
@@ -39,16 +47,29 @@ venv.bak/
 *.onnx
 *.pb
 *.tflite
+*.ckpt
+*.safetensors
 
 # Logging & Tracking
 wandb/
+.wandb/
 mlruns/
 logs/
 
-# Environment Variables
+# Environment Variables & Secrets
 .env
+.env.*
+*.env
 .env.local
+kaggle.json
+*.pem
+*.key
+*credentials*.json
+*secret*.json
+service_account.json
+tokens.json
 
 # OS Specific
 .DS_Store
 Thumbs.db
+
